@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eNVision - Order</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1><a href="about.html" class="logo-link">eNVision</a></h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="product.html">Products</a>
+            <a href="rewards.html">Rewards</a>
+            <a href="about.html">About</a>
+            <a class="active-nav">Order</a>
+        </nav>
+        <span class="page-title">Order</span>
+    </header>
+
+    <div id="addonNotice" class="addon-notice"></div>
+
+    <form class="order-layout" onsubmit="return validateForm()" novalidate>
+        <div class="order-form-box">
+            <h2>Complete Your Order</h2>
+            <p class="order-subtext">
+                Fill in your payment and lens preferences.
+            </p>
+
+            <label>Select Frame</label>
+
+            <div class="custom-dropdown" id="productDropdown">
+                <div class="dropdown-selected">
+                    Aurora Silver
+                    <span class="dropdown-arrow">⌄</span>
+                </div>
+
+                <div class="dropdown-options" id="productOptions"></div>
+            </div>
+
+            <label>Payment Method</label>
+
+            <div class="custom-dropdown" id="paymentDropdown">
+                <div class="dropdown-selected">
+                    Paypal
+                    <span class="dropdown-arrow">⌄</span>
+                </div>
+
+                <div class="dropdown-options">
+                    <div class="dropdown-option" data-value="paypal">Paypal</div>
+                    <div class="dropdown-option" data-value="xsolla">Xsolla</div>
+                    <div class="dropdown-option" data-value="bank-transfer">Bank Transfer</div>
+                </div>
+            </div>
+
+            <label>Lens Add-ons</label>
+
+            <div class="addon-layout">
+                <div class="checkbox-group">
+                    <label class="custom-check tooltip-box">
+                        <input type="checkbox" id="addon1">
+                        <span class="checkmark"></span>
+                        <span class="tooltip-text-label">Anti Blue Light</span>
+                    </label>
+
+                    <label class="custom-check tooltip-box">
+                        <input type="checkbox" id="addon2">
+                        <span class="checkmark"></span>
+                        <span class="tooltip-text-label">UV Protection</span>
+                    </label>
+
+                    <label class="custom-check tooltip-box">
+                        <input type="checkbox" id="addon3">
+                        <span class="checkmark"></span>
+                        <span class="tooltip-text-label">Anti-Reflective</span>
+                    </label>
+
+                    <label class="custom-check tooltip-box">
+                        <input type="checkbox" id="addon4">
+                        <span class="checkmark"></span>
+                        <span class="tooltip-text-label">Photochromic</span>
+                    </label>
+                </div>
+
+                <div id="addonFixedNotice" class="addon-fixed-notice"></div>
+            </div>
+
+            <label>Prescription Notes</label>
+
+            <textarea id="prescriptionNotes" class="prescription-box"
+                placeholder="Optional lens prescription, cylinder, axis, or special notes..."></textarea>
+
+            <label>Phone Number</label>
+            <input type="tel" placeholder="+62 812 xxxx xxxx">
+
+
+            <label>Delivery Method</label>
+
+            <div class="custom-dropdown" id="deliveryDropdown">
+                <div class="dropdown-selected">
+                    Instant Delivery (8 hours - 1 day)
+                    <span class="dropdown-arrow">⌄</span>
+                </div>
+
+                <div class="dropdown-options">
+                    <div class="dropdown-option">Instant Delivery (8 hours - 1 day)</div>
+                    <div class="dropdown-option">Standard Delivery (3-5 days)</div>
+                    <div class="dropdown-option">Express Delivery (1-2 days)</div>
+                    <div class="dropdown-option">Store Pickup</div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="order-summary">
+            <h2>Order Summary</h2>
+
+            <img id="summaryImage" src="assets/img/frame1.jpg" alt="frame">
+
+            <h3 id="summaryName">Aurora Silver</h3>
+            <p id="summaryDesc">Premium Titanium Frame</p>
+
+            <div class="price-row">
+                <span>Frame</span>
+                <span id="summaryPrice">$120</span>
+            </div>
+
+            <div id="additionalPurchases"></div>
+
+            <div class="price-row total-price-row">
+                <span>Total</span>
+                <span id="totalPrice">$120</span>
+            </div>
+        </div>
+
+    </form>
+
+    <section class="site-footer" id="siteFooter">
+        <div class="copyright-bar">
+            <p>© 2026 eNVision</p>
+        </div>
+
+        <div class="footer-reveal">
+            <h2>eNVision</h2>
+            <p>Designed for vision, crafted for style.</p>
+
+            <div class="footer-links">
+                <a href="#">About</a>
+                <a href="#">Products</a>
+                <a href="#">Rewards</a>
+                <a href="#">Order</a>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/product.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

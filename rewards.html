@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eNVision - Rewards</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1><a href="about.html" class="logo-link">eNVision</a></h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="product.html">Products</a>
+            <a class="active-nav">Rewards</a>
+            <a href="about.html">About</a>
+            <a href="order.html">Order</a>
+        </nav>
+        <span class="page-title">Rewards</span>
+    </header>
+
+
+    <section class="rewards-page">
+
+        <div class="rewards-header">
+            <h2>Exclusive Member Rewards</h2>
+            <p>Enjoy premium benefits every time you shop with eNVision.</p>
+        </div>
+
+        <div class="rewards-grid">
+
+            <div class="reward-card">
+                <div class="reward-icon">🎁</div>
+                <h3>Birthday Gift</h3>
+                <p>
+                    Get a special discount voucher during your birthday month
+                    and enjoy a premium shopping experience.
+                </p>
+                <span class="reward-points">500 Points</span>
+            </div>
+
+            <div class="reward-card">
+                <div class="reward-icon">🚚</div>
+                <h3>Free Express Delivery</h3>
+                <p>
+                    Members enjoy priority shipping with faster delivery
+                    and full tracking support for every order.
+                </p>
+                <span class="reward-points">750 Points</span>
+            </div>
+
+            <div class="reward-card">
+                <div class="reward-icon">💎</div>
+                <h3>VIP Exclusive Access</h3>
+                <p>
+                    Unlock early access to limited collections,
+                    premium frame launches, and exclusive offers.
+                </p>
+                <span class="reward-points">1200 Points</span>
+            </div>
+
+            <div class="reward-card">
+                <div class="reward-icon">🛍️</div>
+                <h3>Shopping Cashback</h3>
+                <p>
+                    Earn cashback points for every purchase and redeem
+                    them for discounts on your next order.
+                </p>
+                <span class="reward-points">300 Points</span>
+            </div>
+
+            <div class="reward-card">
+                <div class="reward-icon">👓</div>
+                <h3>Free Lens Upgrade</h3>
+                <p>
+                    Redeem points to upgrade your lenses with premium
+                    anti-blue light and UV protection features.
+                </p>
+                <span class="reward-points">900 Points</span>
+            </div>
+
+            <div class="reward-card">
+                <div class="reward-icon">⭐</div>
+                <h3>Priority Support</h3>
+                <p>
+                    Receive faster customer support assistance and
+                    dedicated service for all premium members.
+                </p>
+                <span class="reward-points">600 Points</span>
+            </div>
+
+        </div>
+
+        <div class="membership-box">
+
+            <h2>Join Premium Membership</h2>
+            <p>
+                Become part of the eNVision premium community and unlock
+                exclusive rewards, special offers, and luxury eyewear benefits
+                designed for your everyday lifestyle.
+            </p>
+
+            <button class="membership-btn" id="membershipToggle">
+                Upgrade Membership
+            </button>
+
+            <div class="membership-expand" id="membershipExpand">
+
+                <div class="membership-plan">
+                    <h3>Silver Member</h3>
+                    <p>Best for casual shoppers who want everyday rewards.</p>
+
+                    <ul>
+                        <li>5% Cashback Every Purchase</li>
+                        <li>Birthday Discount Voucher</li>
+                        <li>Priority Customer Support</li>
+                    </ul>
+
+                    <div class="plan-price">$29 / year</div>
+                    <button class="plan-btn choose-plan-btn" data-plan="Silver Member">
+                        Choose Silver
+                    </button>
+                </div>
+
+                <div class="membership-plan">
+                    <h3>Gold Member</h3>
+                    <p>Perfect for premium users who shop more often.</p>
+
+                    <ul>
+                        <li>10% Cashback Every Purchase</li>
+                        <li>Free Lens Upgrade</li>
+                        <li>Free Express Delivery</li>
+                        <li>Early Access New Collection</li>
+                    </ul>
+
+                    <div class="plan-price">$59 / year</div>
+                    <button class="plan-btn choose-plan-btn" data-plan="Gold Member">
+                        Choose Gold
+                    </button>
+                </div>
+
+                <div class="membership-plan premium-plan">
+                    <h3>Diamond Member</h3>
+                    <p>The ultimate luxury experience for exclusive customers.</p>
+
+                    <ul>
+                        <li>15% Cashback Every Purchase</li>
+                        <li>VIP Exclusive Access</li>
+                        <li>Free Premium Lens Package</li>
+                        <li>Private Styling Consultation</li>
+                        <li>Lifetime Priority Support</li>
+                    </ul>
+
+                    <div class="plan-price">$99 / year</div>
+                    <button class="plan-btn choose-plan-btn" data-plan="Diamond Member">
+                        Choose Diamond
+                    </button>
+                </div>
+
+            </div>
+
+            <div class="membership-order-expand" id="membershipOrderExpand">
+
+                <h3 id="selectedPlanTitle">Complete Your Membership</h3>
+                <p id="selectedPlanDesc">
+                    Fill in your details and activate your premium benefits.
+                </p>
+
+                <div class="membership-order-form">
+
+                    <div class="membership-input">
+                        <label>Full Name</label>
+                        <input type="text" placeholder="Enter your full name">
+                    </div>
+
+                    <div class="membership-input">
+                        <label>Email Address</label>
+                        <input type="email" placeholder="Enter your email">
+                    </div>
+
+                    <div class="membership-input">
+                        <label>Phone Number</label>
+                        <input type="text" placeholder="Enter your phone number">
+                    </div>
+
+                    <div class="membership-input">
+                        <label>Preferred Payment</label>
+
+                        <div class="custom-dropdown" id="membershipPaymentDropdown">
+                            <div class="dropdown-selected">
+                                Credit Card
+                                <span class="dropdown-arrow">⌄</span>
+                            </div>
+
+                            <div class="dropdown-options">
+                                <div class="dropdown-option">Credit Card</div>
+                                <div class="dropdown-option">Bank Transfer</div>
+                                <div class="dropdown-option">E-Wallet</div>
+                            </div>
+                        </div>
+
+                        <div class="membership-summary-box">
+                            <span>Selected Membership</span>
+
+                            <div class="membership-plan-row">
+                                <strong id="selectedPlanName">
+                                    Diamond Member
+                                </strong>
+
+                                <div class="selected-plan-price" id="selectedPlanPrice">
+                                    $99 / year
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="confirm-membership-btn">
+                            Confirm Membership
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+    </section>
+
+    <section class="site-footer" id="siteFooter">
+        <div class="copyright-bar">
+            <p>© 2026 eNVision</p>
+        </div>
+
+        <div class="footer-reveal">
+            <h2>eNVision</h2>
+            <p>Designed for vision, crafted for style.</p>
+
+            <div class="footer-links">
+                <a href="#">About</a>
+                <a href="#">Products</a>
+                <a href="#">Rewards</a>
+                <a href="#">Order</a>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
