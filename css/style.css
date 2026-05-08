@@ -2382,7 +2382,6 @@ MEMBERSHIP PRICE AESTHETIC
 FULL PAGE NO SELECT
 ========================= */
 
-/* semua elemen default tidak bisa diblok */
 * {
     user-select: none;
     -webkit-user-select: none;
@@ -2390,7 +2389,6 @@ FULL PAGE NO SELECT
     -webkit-user-drag: none;
 }
 
-/* tapi form tetap bisa diketik + select text */
 input,
 textarea,
 select,
@@ -2401,18 +2399,326 @@ option {
     pointer-events: auto;
 }
 
-/* button tetap clickable */
+
 button,
 a {
     pointer-events: auto;
 }
 
-/* image tidak bisa di drag */
+
 img {
     -webkit-user-drag: none;
 }
 
-/* mobile long press disable */
+
 body {
     -webkit-touch-callout: none;
+}
+
+/* =========================================
+RESPONSIVE TABLET
+========================================= */
+
+@media screen and (max-width: 1024px) {
+
+    header {
+        grid-template-columns: 1fr;
+        gap: 18px;
+        padding: 20px;
+        text-align: center;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .page-title {
+        display: none;
+    }
+
+    .hero h2,
+    .about-hero h2,
+    .about-story h2,
+    .premium-promise h2,
+    .rewards-header h2 {
+        font-size: 42px;
+    }
+
+    .hero p,
+    .about-hero p,
+    .about-story p,
+    .premium-promise p {
+        font-size: 16px;
+    }
+
+    .card-container,
+    .rewards-grid,
+    .product-grid,
+    .why-us,
+    .stats {
+        gap: 20px;
+    }
+
+    .card,
+    .reward-card,
+    .why-card,
+    .stat-box {
+        width: 100%;
+        max-width: 340px;
+    }
+
+    .order-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .order-summary {
+        min-width: 100%;
+    }
+
+    form {
+        width: 90%;
+    }
+
+    .membership-expand {
+        grid-template-columns: 1fr;
+    }
+
+    .membership-plan {
+        width: 100%;
+    }
+
+    .membership-order-expand {
+        width: 100%;
+    }
+}
+
+
+/* =========================================
+RESPONSIVE MOBILE
+========================================= */
+
+@media screen and (max-width: 768px) {
+
+    body {
+        padding-top: 160px;
+    }
+
+    header {
+        padding: 16px;
+    }
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    nav {
+        width: 100%;
+        gap: 10px;
+    }
+
+    nav a {
+        padding: 10px 14px;
+        font-size: 14px;
+    }
+
+    .hero,
+    .about-hero,
+    .about-story,
+    .premium-promise,
+    .membership-box,
+    .order-form-box,
+    .order-summary,
+    .about {
+        width: 94%;
+        padding: 24px;
+    }
+
+    .hero h2,
+    .about-hero h2,
+    .about-story h2,
+    .premium-promise h2,
+    .rewards-header h2 {
+        font-size: 32px;
+        line-height: 1.2;
+    }
+
+    .hero p,
+    .about-hero p,
+    .about-story p,
+    .premium-promise p,
+    .rewards-header p {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+    .card-container,
+    .rewards-grid,
+    .why-us,
+    .stats {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card,
+    .reward-card,
+    .why-card,
+    .stat-box {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .product-item {
+        flex-direction: column;
+    }
+
+    .product-image-wrap,
+    .product-info {
+        width: 100%;
+    }
+
+    .product-info {
+        padding: 20px;
+    }
+
+    .product-name {
+        font-size: 26px;
+    }
+
+    .product-price,
+    .product-price-tag {
+        font-size: 18px;
+    }
+
+    .stats {
+        padding: 10px 0;
+    }
+
+    .stat-box h3 {
+        font-size: 34px;
+    }
+
+    .footer-reveal h2 {
+        font-size: 34px;
+    }
+
+    .footer-links {
+        gap: 16px;
+    }
+
+    .checkbox-group {
+        flex-direction: column;
+    }
+
+    .addon-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .custom-check {
+        width: 100%;
+    }
+
+    .membership-expand {
+        grid-template-columns: 1fr;
+    }
+
+    .membership-plan {
+        width: 100%;
+    }
+
+    .selected-membership-box {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 14px;
+    }
+
+    .selected-membership-box .membership-price {
+        margin-left: 0;
+    }
+
+    .membership-order-form {
+        width: 100%;
+    }
+
+    .membership-input input,
+    .membership-input select {
+        width: 100%;
+    }
+
+    .promise-btn,
+    .membership-btn,
+    .plan-btn,
+    button {
+        width: 100%;
+    }
+
+    .order-summary h2,
+    .order-form-box h2 {
+        font-size: 28px;
+    }
+
+    #summaryName {
+        font-size: 28px;
+    }
+}
+
+
+/* =========================================
+SMALL MOBILE
+========================================= */
+
+@media screen and (max-width: 480px) {
+
+    body {
+        padding-top: 180px;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    nav {
+        gap: 8px;
+    }
+
+    nav a {
+        font-size: 13px;
+        padding: 9px 12px;
+    }
+
+    .hero h2,
+    .about-hero h2,
+    .about-story h2,
+    .premium-promise h2,
+    .rewards-header h2 {
+        font-size: 26px;
+    }
+
+    .hero p,
+    .about-hero p,
+    .about-story p,
+    .premium-promise p {
+        font-size: 14px;
+    }
+
+    .product-name {
+        font-size: 22px;
+    }
+
+    .footer-reveal h2 {
+        font-size: 28px;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .stat-box {
+        padding: 22px 16px;
+    }
+
+    .stat-box h3 {
+        font-size: 28px;
+    }
 }
