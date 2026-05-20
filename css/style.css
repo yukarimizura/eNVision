@@ -2366,6 +2366,30 @@ MEMBERSHIP PRICE AESTHETIC
 }
 
 /* =========================
+HEIGHT ANIMATION CONTAINERS
+========================= */
+
+#additionalPurchases {
+    transition: max-height 0.35s ease;
+    max-height: 2000px;
+    overflow: hidden;
+}
+
+#additionalPurchases.collapsed {
+    max-height: 0;
+}
+
+.expandable-container {
+    transition: max-height 0.35s ease;
+    max-height: 2000px;
+    overflow: hidden;
+}
+
+.expandable-container.collapsed {
+    max-height: 0;
+}
+
+/* =========================
 11. RESPONSIVE
 ========================= */
 @media screen and (max-width: 768px) {

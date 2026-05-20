@@ -112,33 +112,12 @@ document.addEventListener("click", (e) => {
     });
 });
 
-function animateContainerHeight(container, callback) {
-    const startHeight = container.offsetHeight;
-
-    callback();
-
-    const endHeight = container.scrollHeight;
-
-    container.style.height = startHeight + "px";
-
-    requestAnimationFrame(() => {
-        container.style.height = endHeight + "px";
-    });
-
-    const onTransitionEnd = () => {
-        container.style.height = "auto";
-        container.removeEventListener("transitionend", onTransitionEnd);
-    };
-
-    container.addEventListener("transitionend", onTransitionEnd);
-}
+/* Height animation is now handled via CSS transitions on .expandable-container class */
 
 
 function updateAddons() {
     const additionalBox = document.getElementById("additionalPurchases");
     const totalPrice = document.getElementById("totalPrice");
-
-    const startHeight = additionalBox.offsetHeight;
 
     let basePrice = parseInt(
         document.getElementById("summaryPrice").innerText.replace("$", "")
@@ -152,7 +131,6 @@ function updateAddons() {
     ];
 
     let totalExtra = 0;
-    let removedSomething = false;
 
     addons.forEach(addon => {
         const checked = document.getElementById(addon.checkbox).checked;
@@ -179,37 +157,16 @@ function updateAddons() {
                 });
             }
         } else if (existing) {
-            removedSomething = true;
-
             existing.classList.remove("show");
             existing.classList.add("animate-out");
 
             setTimeout(() => {
                 existing.remove();
-                animateHeight();
             }, 300);
         }
     });
 
     totalPrice.innerText = `$${basePrice + totalExtra}`;
-
-    if (!removedSomething) {
-        animateHeight();
-    }
-
-    function animateHeight() {
-        const endHeight = additionalBox.scrollHeight;
-
-        additionalBox.style.height = startHeight + "px";
-
-        requestAnimationFrame(() => {
-            additionalBox.style.height = endHeight + "px";
-        });
-
-        setTimeout(() => {
-            additionalBox.style.height = "auto";
-        }, 350);
-    }
 }
 
 const addon1 = document.getElementById("addon1");
