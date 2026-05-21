@@ -1,6 +1,6 @@
-/* =========================
-RESET & BASE
-========================= */
+/*
+BASE
+*/
 * {
     margin: 0;
     padding: 0;
@@ -90,9 +90,9 @@ body::after {
     }
 }
 
-/* =========================
+/*
 SCROLL-BAR
-========================= */
+*/
 
 ::-webkit-scrollbar {
     width: 10px;
@@ -112,9 +112,9 @@ SCROLL-BAR
     background: linear-gradient(180deg, #4d8dff, #93c5fd);
 }
 
-/* =========================
+/*
 PAGE TRANSITION
-========================= */
+*/
 @keyframes pageFade {
     from {
         opacity: 0;
@@ -156,9 +156,9 @@ html.fade-out-scroll {
     }
 }
 
-/* =========================
+/*
 HEADER & NAV
-========================= */
+*/
 header {
     background: rgba(11, 18, 32, 0.9);
     color: white;
@@ -254,9 +254,9 @@ nav a:hover {
         0 0 18px rgba(96, 165, 250, 0.18);
 }
 
-/* =========================
+/*
 ACTIVE NAV
-========================= */
+*/
 .active-nav {
     background: rgba(96, 165, 250, 0.22);
     border: 1px solid rgba(96, 165, 250, 0.28);
@@ -292,9 +292,9 @@ ACTIVE NAV
     transform: translateX(-50%) translateY(0);
 }
 
-/* =========================
+/*
 HINT TEXT
-========================= */
+*/
 .page-title {
     position: absolute;
     right: 40px;
@@ -310,9 +310,9 @@ HINT TEXT
 
 }
 
-/* =========================
+/*
 FEATURED TEXT
-========================= */
+*/
 
 .featured-text {
     text-align: center;
@@ -339,9 +339,9 @@ FEATURED TEXT
 }
 
 
-/* =========================
+/*
 DIVIDER
-========================= */
+*/
 
 .divider {
     width: 180px;
@@ -353,9 +353,9 @@ DIVIDER
             transparent);
 }
 
-/* =========================
+/*
 HERO
-========================= */
+*/
 .hero {
     position: relative;
     text-align: center;
@@ -484,9 +484,9 @@ HERO
     }
 }
 
-/* =========================
+/*
 WHY US
-========================= */
+*/
 
 .why-us {
     width: 90%;
@@ -541,9 +541,9 @@ WHY US
     transform: translateY(0);
 }
 
-/* =========================
-Stats
-========================= */
+/*
+STATS
+*/
 
 .stats {
     width: 90%;
@@ -635,9 +635,9 @@ Stats
     letter-spacing: 0.4px;
 }
 
-/* =========================
+/*
 BUTTON
-========================= */
+*/
 button {
     background: #2563eb;
     color: white;
@@ -653,9 +653,9 @@ button:hover {
     background: #1d4ed8;
 }
 
-/* =========================
+/*
 CARD
-========================= */
+*/
 .card {
     position: relative;
     z-index: 2;
@@ -761,9 +761,9 @@ CARD
     transform: translateY(0);
 }
 
-/* =========================
-Product Text
-========================= */
+/*
+PRODUCT SECTION
+*/
 
 .product-name {
     margin-top: 14px;
@@ -816,9 +816,9 @@ Product Text
         0 4px 14px rgba(0, 0, 0, 0.18);
 }
 
-/* =========================
+/*
 FORM
-========================= */
+*/
 form {
     width: 65%;
     margin: 50px auto;
@@ -908,6 +908,10 @@ button::selection {
     margin-bottom: 14px;
 }
 
+/*
+CUSTOM CHECKLIST
+*/
+
 .custom-check {
     min-width: 170px;
     display: inline-flex;
@@ -962,6 +966,10 @@ button::selection {
     border-width: 0 2px 2px 0;
     transform: rotate(45deg);
 }
+
+/*
+ORDER LAYOUT
+*/
 
 .order-layout {
     width: 85%;
@@ -1030,9 +1038,9 @@ button::selection {
 
 
 
-/* =========================
-9. ABOUT
-========================= */
+/*
+ABOUT
+*/
 .about {
     position: relative;
     max-width: 900px;
@@ -1136,9 +1144,9 @@ button::selection {
     line-height: 1.6;
 }
 
-/* =========================
-10. Tool-tip
-========================= */
+/*
+Tool-tip
+*/
 
 .tooltip-box {
     position: relative;
@@ -1204,9 +1212,9 @@ button::selection {
     background: rgba(40, 55, 85, 0.95);
 }
 
-/* =========================
-10. FOOTER
-========================= */
+/*
+FOOTER
+*/
 
 .copyright-bar {
     width: 100%;
@@ -1272,9 +1280,9 @@ button::selection {
     color: #69a7ff;
 }
 
-/* =========================
-11. ORDER SUMMARY
-========================= */
+/*
+ORDER SUMMARY
+*/
 
 .order-summary {
     position: relative;
@@ -1511,9 +1519,9 @@ button::selection {
     font-size: 22px;
 }
 
-/* =========================
-11. Addon Notice
-========================= */
+/*
+Addon Notice
+*/
 
 .addon-notice {
     position: fixed;
@@ -1552,9 +1560,9 @@ button::selection {
     transform: translateX(-50%) translateY(0);
 }
 
-/* =========================
-11. prescription
-========================= */
+/*
+prescription
+*/
 
 .prescription-box {
     width: 100%;
@@ -1588,9 +1596,9 @@ button::selection {
     color: rgba(255, 255, 255, 0.45);
 }
 
-/* =========================
+/*
 CUSTOM DROPDOWN ANIMATION
-========================= */
+*/
 
 .custom-dropdown {
     position: relative;
@@ -1674,9 +1682,9 @@ CUSTOM DROPDOWN ANIMATION
     padding-left: 24px;
 }
 
-/* =========================
+/*
 PRODUCTS PAGE
-========================= */
+*/
 
 .products-page {
     width: 90%;
@@ -1705,7 +1713,6 @@ PRODUCTS PAGE
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 42px;
-    /* sebelumnya 32px */
 }
 
 .product-item {
@@ -1728,7 +1735,9 @@ PRODUCTS PAGE
     position: relative;
 }
 
-/* HOVER + ACTIVE SAMA */
+/* 
+HOVER + ACTIVE PRODUCT ITEM
+*/
 .product-item:hover,
 .product-item.active-focus {
     transform: translateY(-8px) scale(1.05);
@@ -1868,9 +1877,9 @@ PRODUCTS PAGE
             #2563eb);
 }
 
-/* =========================
+/*
 REWARDS PAGE
-========================= */
+*/
 
 .rewards-page {
     width: 90%;
@@ -2045,9 +2054,9 @@ REWARDS PAGE
 }
 
 
-/* =========================
+/*
 EXPANDABLE MEMBERSHIP
-========================= */
+*/
 
 .membership-expand {
     max-height: 0;
@@ -2147,9 +2156,9 @@ EXPANDABLE MEMBERSHIP
         0 0 20px rgba(96, 165, 250, 0.08);
 }
 
-/* =========================
+/*
 SECOND EXPAND MEMBERSHIP ORDER
-========================= */
+*/
 
 .membership-order-expand {
     max-height: 0;
@@ -2218,7 +2227,6 @@ SECOND EXPAND MEMBERSHIP ORDER
     color: rgba(255, 255, 255, 0.7);
 }
 
-/* ini yang penting */
 .membership-summary-box strong {
     display: inline-flex;
     align-items: center;
@@ -2257,9 +2265,9 @@ SECOND EXPAND MEMBERSHIP ORDER
     box-shadow: 0 12px 24px rgba(59, 130, 246, 0.25);
 }
 
-/* =========================
+/*
 MEMBERSHIP PRICE AESTHETIC
-========================= */
+*/
 
 .selected-plan-price {
     margin: 0;
@@ -2283,7 +2291,6 @@ MEMBERSHIP PRICE AESTHETIC
         0 8px 20px rgba(0, 0, 0, 0.18);
 }
 
-/* bikin membership dropdown sama kayak order */
 #membershipPaymentDropdown .dropdown-options {
     position: absolute;
     top: calc(100% + 8px);
@@ -2365,9 +2372,9 @@ MEMBERSHIP PRICE AESTHETIC
     box-shadow: 0 12px 24px rgba(59, 130, 246, 0.25);
 }
 
-/* =========================
+/*
 HEIGHT ANIMATION CONTAINERS
-========================= */
+*/
 
 #additionalPurchases {
     transition: max-height 0.35s ease;
@@ -2389,9 +2396,9 @@ HEIGHT ANIMATION CONTAINERS
     max-height: 0;
 }
 
-/* =========================
-11. RESPONSIVE
-========================= */
+/*
+RESPONSIVE
+*/
 @media screen and (max-width: 768px) {
     nav {
         flex-wrap: wrap;
@@ -2402,9 +2409,9 @@ HEIGHT ANIMATION CONTAINERS
     }
 }
 
-/* =========================
+/*
 FULL PAGE NO SELECT
-========================= */
+*/
 
 * {
     user-select: none;
@@ -2439,9 +2446,9 @@ body {
     -webkit-touch-callout: none;
 }
 
-/* =========================================
+/*
 RESPONSIVE TABLET
-========================================= */
+*/
 
 @media screen and (max-width: 1024px) {
 
@@ -2518,9 +2525,9 @@ RESPONSIVE TABLET
 }
 
 
-/* =========================================
+/*
 RESPONSIVE MOBILE
-========================================= */
+*/
 
 @media screen and (max-width: 768px) {
 
@@ -2687,9 +2694,9 @@ RESPONSIVE MOBILE
 }
 
 
-/* =========================================
+/*
 SMALL MOBILE
-========================================= */
+*/
 
 @media screen and (max-width: 480px) {
 
